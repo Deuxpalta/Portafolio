@@ -7,8 +7,11 @@ function CardBody({ title, description, url }) {
      <Text variant="h5">{title}</Text>
      <Text variant="p">{description}</Text>
      <Text variant="span" className="text-muted">
-       <a href={url} target="_blank" rel="noopener noreferrer">
-       </a>
+      {url ? (
+        <a href={url} target="_blank" rel="noopener noreferrer">
+          Ver más
+        </a>
+      ) : null}
      </Text>
    </>
  );

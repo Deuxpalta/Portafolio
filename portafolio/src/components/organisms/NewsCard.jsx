@@ -12,12 +12,13 @@ function NewsCard({ newsItem }) {
  return (
    <Card style={{ width: '18rem' }} className="m-2">
      <Image src={newsItem.image} alt={newsItem.title} className="card-img-top" />
-     <Card.Body>
-       <CardBody
-         title={newsItem.title}
-         description={newsItem.description}
+      <Card.Body>
+      <CardBody
+        title={newsItem.title}
+        description={newsItem.description}
+        url={newsItem.url}
 
-       />
+      />
        <Button variant="primary" onClick={() => window.open(`${newsItem.url}`, '_blank')}>
          ira si vamo' a ver la' noticia'
        </Button>
