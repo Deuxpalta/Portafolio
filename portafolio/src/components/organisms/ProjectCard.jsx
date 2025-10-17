@@ -1,3 +1,4 @@
+import React from 'react';
 import { Card } from 'react-bootstrap';
 import Image from '../atoms/Image';
 import Button from '../atoms/Button';
@@ -16,8 +17,6 @@ function ProjectCard({ project }) {
       <CardBody
         title={project.name}
         description={project.description}
-        url={project.projecturl}
-
       />
        <Button variant="primary" onClick={() => window.open(`${project.projecturl}`, '_blank')}>
          ira si vamo' a ver lo' proyecto'
